@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src = "https://kit.fontawesome.com/1935d064dd.js" 
+    crossorigin = "anonymous">
+   </script>
+    <title>Zuwairanajma Portfolio Website</title>
+</head>
+<body>
+  <!-- Toolbar Header Section Starts -->
+  <header> 
+    <div id= "head-wrap" class="headbar">
+      <div class="logo-icon">
+      <a href ="#" class="logo">ZUWAIRA</a>
+      <div class="hamburger"><i class="fas fa-bars fa-lg"></i></div>
+    </div>
+<nav> 
+<ul class="menu-items">
+  <li><a href="#portfolio">Portfolio</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><img src="PImages/iconMail.png" alt="Mail Icon Image"></li>
+</ul>
+</nav>
+<nav class="menu-list">
+  <ul>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+  <img class="close" src="PImages/close.png" alt="Close Icon Image">
+</div>
+</header>
+<!-- Toolbar Header Section ends -->
+
+<main>
+ <!-- Headline Section Starts -->
+    <section class="headline" id="portfolio">
+    <div class="container_text">
+        <h1 class="ptext">Hey There. <br> I'm Zuwaira.</h1>
+        <h2 class="stext">I'm a Software Developer</h2>
+        <p class="description">I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+            don’t hesitate to contact me.
+        </p>
+        <nav class="icon-wrap">
+            <ul class="navicon">
+                  <li><a href="https://github.com/Zuwairanajma"><img class= "github" src="PImages/GitHub.png" alt="Github Icon"></a></li>
+                  <li><a href="https://www.linkedin.com/in/zuwaira-sadiq-566b891b0?"><img class= "linkedin" src="PImages/Linkedin.png" alt="Linkedin Icon"></a></li> 
+                  <li><a href="#"><img class= "angeli" src="PImages/VectorH.png" alt="Angellist Icon"></a></li>
+                  <li><a href="https://twitter.com/@SadiqJuwairiyya"><img class= "twitter" src="PImages/Twitter.png" alt="Twitter Icon"></a></li>
+                  <li><a href="#"><img class= "medium" src="PImages/Medium.png" alt="Medium Icon"></a></li>
+            </ul>
+        </nav>
+        </div>
+    </section>
+    <!-- Headline Section End -->
+  
+    <!-- Recent Works Section Start -->
+
+    <section class="latest-job">
+    <div id="recent-worksdone" class="my-recent"></div>
+      <div id="card-section" class="card-section"></div>
+      </section> 
+
+      <section id="modal">
+            
+        <div class="modal" id="mymodal">
+      
+
+         </section>
+    <!-- About me section -->
+    <section id="about" class="about-section">
+      <div class="about-introduction-content">
+        <div class="about-text">
+          <h3 class="about-heading">About me</h3>
+          <p class="about-section-p">Hey there! I can help you build a product, feature or website. Look
+          through some of my work and experience! If you like what you see and
+          have a project you need coded, don't hesitate to contact me.
+        </p>
+      <a href="#" class="my-resume_link">
+        <button class="my-resume-btn" type="button">Get My Resume</button>
+      </a></div>
+      <div class="background-graphic">
+      </div>
+      </div>
+      <div>
+        <hr class="horizontal-seperator-on-dark"/>
+      </div>
+    <div class="about-myself">
+      <ul class="language-section">
+        <li class="list-style">
+          <div class="diamond"></div>
+          <h4>Language</h4>
+        </li>
+        <ul class="about-section-content">
+          <li>Javascript</li>
+          <li>Ruby</li>
+          <li>Html</li>
+          <li>Css</li></ul>
+        </ul>
+      <!-- </div> -->
+      <ul class="language-section">
+        <li class="list-style">
+          <div class="square"></div>
+          <h4>Frameworks</h4>
+        </li>
+        <ul class="about-section-content">
+          <li>React.js</li>
+          <li>Ruby on Rails</li>
+          <li>RSPec</li>
+          <li>CapyBara</li></ul>
+        </ul>
+      <ul class="language-section">
+        <li class="list-style" id="skills">
+          <div class="circle"></div>
+          <h4 class="skills">Skills</h4>
+        </li>
+        <ul class="about-section-content">
+          <li>Database Management</li>
+          <li>Version Control</li>
+          <li>CLI</li>
+          <li>API Design</li>
+          <li>Web Development</li></ul>
+        </ul>
+      </div>
+</section>
+ <!-- About me Section End -->
+ <section id="contact" class="form-container">
+  <div class="contact-wrapper">
+    <div>
+      <p class="contact-header">
+        I'm always interested in hearing about new projects, so if you'd
+        like to chat please get in touch.
+      </p>
+    </div>
+    <form id="contactForm" action="https://formspree.io/f/xzbqnzke" method="POST">
+      <ul class="contact-fields">
+        <li>
+          <label for="fullName" hidden>Full Name</label>
+          <input type="text" id="full-name" name="fullName" placeholder="Full name" maxlength="30" required />
+        </li>
+        <li>
+          <label for="email" hidden>Email</label>
+          <input type="email" name="email" placeholder="Email address" required />
+        </li>
+        <li>
+          <label for="message" hidden>Message</label>
+          <textarea class="text" name="message" id="form-message" placeholder="Write me something..." maxlength="500"
+          required></textarea>          
+        </li>
+        <li class="contact-btns">
+            <button id="btn-msg" type="submit" class="project-details btn-contact">
+              Get in touch
+            </button>
+        </li>
+      </ul>
+    </form>
+  </div>
+</section>
+<section id="footer" class="footer">
+  <div>
+    <hr class="hori-div">
+  </div>
+  <ul class="image-icons-footer">
+    <li>
+      <a href="https://github.com/Zuwairanajma"><img src="PImages/VectorGit2.png" alt="GitHub" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="PImages/Angel2.png" alt="Angels List" /></a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/zuwaira-sadiq-566b891b0?"><img src="PImages/Linkedingr2.png"
+          alt="Linkedin" /></a>
+    </li>
+    <li>
+      <a href="https://twitter.com/@SadiqJuwairiyya"><img src="PImages/Twitter2.png" alt="Twitter" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="PImages/Vector.png" alt="Medium" /></a>
+    </li>
+  </ul>
+  <div>
+    <hr class="last-line">
+  </div>
+</section>
+
+</main>
+<!-- <div id="myPopup" class="popup"></div> -->
+<script src="script.js"></script>
+<script src="popup.js"></script>
+<script src="formValidation.js"></script>
+</body>
+</html>
